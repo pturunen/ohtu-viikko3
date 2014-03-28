@@ -17,7 +17,9 @@ public class Main {
         Pankki pankki = cxt.getBean(Pankki.class);      
         Viitegeneraattori viitegeneraattori = cxt.getBean(Viitegeneraattori.class);
         Kauppa kauppa = cxt.getBean(Kauppa.class);
-       
+        boolean rikoTestiKonventiot = true;
+        boolean sotkeKoodia = true;
+        boolean teeSyklomaattista = true;
 
         // kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
         kauppa.aloitaAsiointi();
@@ -39,5 +41,43 @@ public class Main {
         for (String tapahtuma : kirjanpito.getTapahtumat()) {
             System.out.println(tapahtuma);
         }
+        
+        if (rikoTestiKonventiot){
+            if (!sotkeKoodia || (rikoTestiKonventiot || !teeSyklomaattista)){
+if ((teeSyklomaattista && rikoTestiKonventiot) || sotkeKoodia){
+                    boolean joopajoo = true;
+                    while (joopajoo){
+                        if (joopajoo){
+                            for (int i=0;i<10;i++){
+                                for(int j=0;j<3;j++){
+System.out.println("Tarkea tiedotus: refactoroi");
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+          
+       if (rikoTestiKonventiot){
+            if (!sotkeKoodia || (rikoTestiKonventiot || !teeSyklomaattista)){
+if ((teeSyklomaattista && rikoTestiKonventiot) || sotkeKoodia){
+                    boolean joopajoo = true;
+                    while (joopajoo){
+                        if (joopajoo){
+                            for (int i=0;i<10;i++){
+                                for(int j=0;j<3;j++){
+System.out.println("Laskari3 tehtava 1, testaa kaikki lisatyt stylechecksit");
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        } 
+        
+        
     }
 }
