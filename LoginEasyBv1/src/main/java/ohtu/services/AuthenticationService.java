@@ -10,15 +10,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class AuthenticationService {
 
-    private UserDao userDao;
-    private int minLengthForName = 3;
-    private int minLengthForWord = 8;
+    private final UserDao userDao;
+    private final int minLengthForName = 3;
+    private final int minLengthForWord = 8;
     
-    @Autowired
+    /**
+     *
+     * @param userDao
+     */
+    //@Autowired
     public AuthenticationService(UserDao userDao) {
         this.userDao = userDao;
     }
-
+    
     public boolean logIn(String username, String password) {
         for (User user : userDao.listAll()) {
             if (user.getUsername().equals(username)
